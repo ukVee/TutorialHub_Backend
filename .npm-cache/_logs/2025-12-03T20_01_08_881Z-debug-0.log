@@ -1,0 +1,559 @@
+0 verbose cli /usr/bin/node /usr/sbin/npm
+1 info using npm@11.6.3
+2 info using node@v25.2.1
+3 silly config load:file:/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/home/ukv/projects/TutorialHub_Backend/.npmrc
+5 silly config load:file:/home/ukv/.npmrc
+6 silly config load:file:/etc/npmrc
+7 verbose title npm install
+8 verbose argv "install"
+9 verbose logfile logs-max:10 dir:/home/ukv/projects/TutorialHub_Backend/.npm-cache/_logs/2025-12-03T20_01_08_881Z-
+10 verbose logfile /home/ukv/projects/TutorialHub_Backend/.npm-cache/_logs/2025-12-03T20_01_08_881Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
+13 silly idealTree buildDeps
+14 verbose shrinkwrap failed to load node_modules/.package-lock.json missing from lockfile: node_modules/async-retry
+15 silly reify mark retired [
+15 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/available-typed-arrays'
+15 silly reify ]
+16 silly reify mark retired [ '/home/ukv/projects/TutorialHub_Backend/node_modules/call-bind' ]
+17 silly reify mark retired [ '/home/ukv/projects/TutorialHub_Backend/node_modules/async-retry' ]
+18 silly reify mark retired [
+18 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/define-data-property'
+18 silly reify ]
+19 silly reify mark retired [ '/home/ukv/projects/TutorialHub_Backend/node_modules/for-each' ]
+20 silly reify mark retired [ '/home/ukv/projects/TutorialHub_Backend/node_modules/cross-inspect' ]
+21 silly reify mark retired [ '/home/ukv/projects/TutorialHub_Backend/node_modules/graphql' ]
+22 silly reify mark retired [
+22 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/has-property-descriptors'
+22 silly reify ]
+23 silly reify mark retired [ '/home/ukv/projects/TutorialHub_Backend/node_modules/is-callable' ]
+24 silly reify mark retired [
+24 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/is-typed-array'
+24 silly reify ]
+25 silly reify mark retired [ '/home/ukv/projects/TutorialHub_Backend/node_modules/isarray' ]
+26 silly reify mark retired [ '/home/ukv/projects/TutorialHub_Backend/node_modules/long' ]
+27 silly reify mark retired [ '/home/ukv/projects/TutorialHub_Backend/node_modules/loglevel' ]
+28 silly reify mark retired [ '/home/ukv/projects/TutorialHub_Backend/node_modules/lodash.sortby' ]
+29 silly reify mark retired [ '/home/ukv/projects/TutorialHub_Backend/node_modules/lru-cache' ]
+30 silly reify mark retired [
+30 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/possible-typed-array-names'
+30 silly reify ]
+31 silly reify mark retired [ '/home/ukv/projects/TutorialHub_Backend/node_modules/retry' ]
+32 silly reify mark retired [ '/home/ukv/projects/TutorialHub_Backend/node_modules/safe-buffer' ]
+33 silly reify mark retired [
+33 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/set-function-length'
+33 silly reify ]
+34 silly reify mark retired [
+34 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/sha.js',
+34 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/.bin/sha.js'
+34 silly reify ]
+35 silly reify mark retired [ '/home/ukv/projects/TutorialHub_Backend/node_modules/to-buffer' ]
+36 silly reify mark retired [ '/home/ukv/projects/TutorialHub_Backend/node_modules/tslib' ]
+37 silly reify mark retired [
+37 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/typed-array-buffer'
+37 silly reify ]
+38 silly reify mark retired [
+38 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/uuid',
+38 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/.bin/uuid'
+38 silly reify ]
+39 silly reify mark retired [
+39 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/which-typed-array'
+39 silly reify ]
+40 silly reify mark retired [
+40 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/whatwg-mimetype'
+40 silly reify ]
+41 silly reify mark retired [
+41 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/protobufjs',
+41 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/.bin/apollo-pbjs',
+41 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/.bin/apollo-pbts'
+41 silly reify ]
+42 silly reify mark retired [
+42 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/server-gateway-interface'
+42 silly reify ]
+43 silly reify mark retired [
+43 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/cache-control-types'
+43 silly reify ]
+44 silly reify mark retired [
+44 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/usage-reporting-protobuf'
+44 silly reify ]
+45 silly reify mark retired [
+45 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/server'
+45 silly reify ]
+46 silly reify mark retired [
+46 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/utils.isnodelike'
+46 silly reify ]
+47 silly reify mark retired [
+47 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/utils.fetcher'
+47 silly reify ]
+48 silly reify mark retired [
+48 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/utils.createhash'
+48 silly reify ]
+49 silly reify mark retired [
+49 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/utils.dropunuseddefinitions'
+49 silly reify ]
+50 silly reify mark retired [
+50 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/utils.keyvaluecache'
+50 silly reify ]
+51 silly reify mark retired [
+51 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/utils.logger'
+51 silly reify ]
+52 silly reify mark retired [
+52 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/utils.printwithreducedwhitespace'
+52 silly reify ]
+53 silly reify mark retired [
+53 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/utils.sortast'
+53 silly reify ]
+54 silly reify mark retired [
+54 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/utils.removealiases'
+54 silly reify ]
+55 silly reify mark retired [
+55 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/utils.usagereporting'
+55 silly reify ]
+56 silly reify mark retired [
+56 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/utils.withrequired'
+56 silly reify ]
+57 silly reify mark retired [
+57 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/utils.stripsensitiveliterals'
+57 silly reify ]
+58 silly reify mark retired [
+58 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@graphql-tools/merge'
+58 silly reify ]
+59 silly reify mark retired [
+59 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@as-integrations/express5'
+59 silly reify ]
+60 silly reify mark retired [
+60 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@graphql-tools/utils'
+60 silly reify ]
+61 silly reify mark retired [
+61 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@graphql-typed-document-node/core'
+61 silly reify ]
+62 silly reify mark retired [
+62 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/base64'
+62 silly reify ]
+63 silly reify mark retired [
+63 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@graphql-tools/schema'
+63 silly reify ]
+64 silly reify mark retired [
+64 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/fetch'
+64 silly reify ]
+65 silly reify mark retired [
+65 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/codegen'
+65 silly reify ]
+66 silly reify mark retired [
+66 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/aspromise'
+66 silly reify ]
+67 silly reify mark retired [
+67 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/eventemitter'
+67 silly reify ]
+68 silly reify mark retired [
+68 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/inquire'
+68 silly reify ]
+69 silly reify mark retired [
+69 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/float'
+69 silly reify ]
+70 silly reify mark retired [ '/home/ukv/projects/TutorialHub_Backend/node_modules/@types/long' ]
+71 silly reify mark retired [
+71 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/pool'
+71 silly reify ]
+72 silly reify mark retired [
+72 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/path'
+72 silly reify ]
+73 silly reify mark retired [
+73 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/utf8'
+73 silly reify ]
+74 silly reify mark retired [
+74 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@whatwg-node/promise-helpers'
+74 silly reify ]
+75 silly reify moves {
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/available-typed-arrays': '/home/ukv/projects/TutorialHub_Backend/node_modules/.available-typed-arrays-WLfE7tBJ',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/call-bind': '/home/ukv/projects/TutorialHub_Backend/node_modules/.call-bind-2A3KfvJJ',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/async-retry': '/home/ukv/projects/TutorialHub_Backend/node_modules/.async-retry-Szez7qcY',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/define-data-property': '/home/ukv/projects/TutorialHub_Backend/node_modules/.define-data-property-qQjZpcyj',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/for-each': '/home/ukv/projects/TutorialHub_Backend/node_modules/.for-each-ubl4j6HD',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/cross-inspect': '/home/ukv/projects/TutorialHub_Backend/node_modules/.cross-inspect-00KWbq8u',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/graphql': '/home/ukv/projects/TutorialHub_Backend/node_modules/.graphql-zOvtxDe5',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/has-property-descriptors': '/home/ukv/projects/TutorialHub_Backend/node_modules/.has-property-descriptors-3qUnyaXD',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/is-callable': '/home/ukv/projects/TutorialHub_Backend/node_modules/.is-callable-Bt9SVc9s',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/is-typed-array': '/home/ukv/projects/TutorialHub_Backend/node_modules/.is-typed-array-RlJzkEy8',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/isarray': '/home/ukv/projects/TutorialHub_Backend/node_modules/.isarray-KHD1XaqO',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/long': '/home/ukv/projects/TutorialHub_Backend/node_modules/.long-9UxQux9Q',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/loglevel': '/home/ukv/projects/TutorialHub_Backend/node_modules/.loglevel-SM2edieK',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/lodash.sortby': '/home/ukv/projects/TutorialHub_Backend/node_modules/.lodash.sortby-Uyv6fEAh',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/lru-cache': '/home/ukv/projects/TutorialHub_Backend/node_modules/.lru-cache-AOdmHByA',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/possible-typed-array-names': '/home/ukv/projects/TutorialHub_Backend/node_modules/.possible-typed-array-names-RdN2crVf',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/retry': '/home/ukv/projects/TutorialHub_Backend/node_modules/.retry-oQIen4Mf',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/safe-buffer': '/home/ukv/projects/TutorialHub_Backend/node_modules/.safe-buffer-TtOowNG0',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/set-function-length': '/home/ukv/projects/TutorialHub_Backend/node_modules/.set-function-length-fc2HIcp5',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/sha.js': '/home/ukv/projects/TutorialHub_Backend/node_modules/.sha.js-ujL7XTBL',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/.bin/sha.js': '/home/ukv/projects/TutorialHub_Backend/node_modules/.bin/.sha.js-FsQdKeBX',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/to-buffer': '/home/ukv/projects/TutorialHub_Backend/node_modules/.to-buffer-FGi1kjKz',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/tslib': '/home/ukv/projects/TutorialHub_Backend/node_modules/.tslib-vazm163E',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/typed-array-buffer': '/home/ukv/projects/TutorialHub_Backend/node_modules/.typed-array-buffer-eINkE4Px',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/uuid': '/home/ukv/projects/TutorialHub_Backend/node_modules/.uuid-260t5phF',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/.bin/uuid': '/home/ukv/projects/TutorialHub_Backend/node_modules/.bin/.uuid-8qrL6ce3',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/which-typed-array': '/home/ukv/projects/TutorialHub_Backend/node_modules/.which-typed-array-jIc3EWMX',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/whatwg-mimetype': '/home/ukv/projects/TutorialHub_Backend/node_modules/.whatwg-mimetype-SyX1rSaI',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/protobufjs': '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/.protobufjs-xelUF7nU',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/.bin/apollo-pbjs': '/home/ukv/projects/TutorialHub_Backend/node_modules/.bin/.apollo-pbjs-Utp9VFcK',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/.bin/apollo-pbts': '/home/ukv/projects/TutorialHub_Backend/node_modules/.bin/.apollo-pbts-3QLlDWSv',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/server-gateway-interface': '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/.server-gateway-interface-ZoyWJVUL',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/cache-control-types': '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/.cache-control-types-iakf1qlm',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/usage-reporting-protobuf': '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/.usage-reporting-protobuf-l4uznsqs',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/server': '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/.server-UjiL9qxh',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/utils.isnodelike': '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/.utils.isnodelike-AUzHz53K',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/utils.fetcher': '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/.utils.fetcher-Qap4PQe0',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/utils.createhash': '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/.utils.createhash-dhuiXx5R',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/utils.dropunuseddefinitions': '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/.utils.dropunuseddefinitions-ZyUwkI2S',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/utils.keyvaluecache': '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/.utils.keyvaluecache-NeVNAGcz',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/utils.logger': '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/.utils.logger-f4Xcbgsi',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/utils.printwithreducedwhitespace': '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/.utils.printwithreducedwhitespace-UDgFcclf',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/utils.sortast': '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/.utils.sortast-sairN8dL',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/utils.removealiases': '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/.utils.removealiases-lupXgMPf',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/utils.usagereporting': '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/.utils.usagereporting-e7DBDrgf',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/utils.withrequired': '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/.utils.withrequired-TcHp5FdL',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/utils.stripsensitiveliterals': '/home/ukv/projects/TutorialHub_Backend/node_modules/@apollo/.utils.stripsensitiveliterals-CEHIq2hx',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@graphql-tools/merge': '/home/ukv/projects/TutorialHub_Backend/node_modules/@graphql-tools/.merge-t3B3Z8Z8',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@as-integrations/express5': '/home/ukv/projects/TutorialHub_Backend/node_modules/@as-integrations/.express5-VYDOZhrz',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@graphql-tools/utils': '/home/ukv/projects/TutorialHub_Backend/node_modules/@graphql-tools/.utils-BEOB39ik',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@graphql-typed-document-node/core': '/home/ukv/projects/TutorialHub_Backend/node_modules/@graphql-typed-document-node/.core-P5nuxK0c',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/base64': '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/.base64-I7X4DvMX',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@graphql-tools/schema': '/home/ukv/projects/TutorialHub_Backend/node_modules/@graphql-tools/.schema-5uCtVaMD',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/fetch': '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/.fetch-JVyxFxUO',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/codegen': '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/.codegen-igLBkrtf',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/aspromise': '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/.aspromise-nxv2wwEs',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/eventemitter': '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/.eventemitter-JvdvYq3y',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/inquire': '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/.inquire-hT1s4MhJ',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/float': '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/.float-W6jYcl03',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@types/long': '/home/ukv/projects/TutorialHub_Backend/node_modules/@types/.long-7C7zzAwT',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/pool': '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/.pool-8itR1GUd',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/path': '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/.path-yd0HMA9i',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/utf8': '/home/ukv/projects/TutorialHub_Backend/node_modules/@protobufjs/.utf8-PHAwouEd',
+75 silly reify   '/home/ukv/projects/TutorialHub_Backend/node_modules/@whatwg-node/promise-helpers': '/home/ukv/projects/TutorialHub_Backend/node_modules/@whatwg-node/.promise-helpers-spBhPMCs'
+75 silly reify }
+76 silly audit bulk request {
+76 silly audit   '@esbuild/aix-ppc64': [ '0.27.0', '0.21.5' ],
+76 silly audit   '@esbuild/android-arm': [ '0.27.0', '0.21.5' ],
+76 silly audit   '@esbuild/android-arm64': [ '0.27.0', '0.21.5' ],
+76 silly audit   '@esbuild/android-x64': [ '0.27.0', '0.21.5' ],
+76 silly audit   '@esbuild/darwin-arm64': [ '0.27.0', '0.21.5' ],
+76 silly audit   '@esbuild/darwin-x64': [ '0.27.0', '0.21.5' ],
+76 silly audit   '@esbuild/freebsd-arm64': [ '0.27.0', '0.21.5' ],
+76 silly audit   '@esbuild/freebsd-x64': [ '0.27.0', '0.21.5' ],
+76 silly audit   '@esbuild/linux-arm': [ '0.27.0', '0.21.5' ],
+76 silly audit   '@esbuild/linux-arm64': [ '0.27.0', '0.21.5' ],
+76 silly audit   '@esbuild/linux-ia32': [ '0.27.0', '0.21.5' ],
+76 silly audit   '@esbuild/linux-loong64': [ '0.27.0', '0.21.5' ],
+76 silly audit   '@esbuild/linux-mips64el': [ '0.27.0', '0.21.5' ],
+76 silly audit   '@esbuild/linux-ppc64': [ '0.27.0', '0.21.5' ],
+76 silly audit   '@esbuild/linux-riscv64': [ '0.27.0', '0.21.5' ],
+76 silly audit   '@esbuild/linux-s390x': [ '0.27.0', '0.21.5' ],
+76 silly audit   '@esbuild/linux-x64': [ '0.27.0', '0.21.5' ],
+76 silly audit   '@esbuild/netbsd-arm64': [ '0.27.0' ],
+76 silly audit   '@esbuild/netbsd-x64': [ '0.27.0', '0.21.5' ],
+76 silly audit   '@esbuild/openbsd-arm64': [ '0.27.0' ],
+76 silly audit   '@esbuild/openbsd-x64': [ '0.27.0', '0.21.5' ],
+76 silly audit   '@esbuild/openharmony-arm64': [ '0.27.0' ],
+76 silly audit   '@esbuild/sunos-x64': [ '0.27.0', '0.21.5' ],
+76 silly audit   '@esbuild/win32-arm64': [ '0.27.0', '0.21.5' ],
+76 silly audit   '@esbuild/win32-ia32': [ '0.27.0', '0.21.5' ],
+76 silly audit   '@esbuild/win32-x64': [ '0.27.0', '0.21.5' ],
+76 silly audit   '@jest/schemas': [ '29.6.3' ],
+76 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.5' ],
+76 silly audit   '@noble/hashes': [ '1.8.0' ],
+76 silly audit   '@paralleldrive/cuid2': [ '2.3.1' ],
+76 silly audit   '@rollup/rollup-android-arm-eabi': [ '4.53.3' ],
+76 silly audit   '@rollup/rollup-android-arm64': [ '4.53.3' ],
+76 silly audit   '@rollup/rollup-darwin-arm64': [ '4.53.3' ],
+76 silly audit   '@rollup/rollup-darwin-x64': [ '4.53.3' ],
+76 silly audit   '@rollup/rollup-freebsd-arm64': [ '4.53.3' ],
+76 silly audit   '@rollup/rollup-freebsd-x64': [ '4.53.3' ],
+76 silly audit   '@rollup/rollup-linux-arm-gnueabihf': [ '4.53.3' ],
+76 silly audit   '@rollup/rollup-linux-arm-musleabihf': [ '4.53.3' ],
+76 silly audit   '@rollup/rollup-linux-arm64-gnu': [ '4.53.3' ],
+76 silly audit   '@rollup/rollup-linux-arm64-musl': [ '4.53.3' ],
+76 silly audit   '@rollup/rollup-linux-loong64-gnu': [ '4.53.3' ],
+76 silly audit   '@rollup/rollup-linux-ppc64-gnu': [ '4.53.3' ],
+76 silly audit   '@rollup/rollup-linux-riscv64-gnu': [ '4.53.3' ],
+76 silly audit   '@rollup/rollup-linux-riscv64-musl': [ '4.53.3' ],
+76 silly audit   '@rollup/rollup-linux-s390x-gnu': [ '4.53.3' ],
+76 silly audit   '@rollup/rollup-linux-x64-gnu': [ '4.53.3' ],
+76 silly audit   '@rollup/rollup-linux-x64-musl': [ '4.53.3' ],
+76 silly audit   '@rollup/rollup-openharmony-arm64': [ '4.53.3' ],
+76 silly audit   '@rollup/rollup-win32-arm64-msvc': [ '4.53.3' ],
+76 silly audit   '@rollup/rollup-win32-ia32-msvc': [ '4.53.3' ],
+76 silly audit   '@rollup/rollup-win32-x64-gnu': [ '4.53.3' ],
+76 silly audit   '@rollup/rollup-win32-x64-msvc': [ '4.53.3' ],
+76 silly audit   '@sinclair/typebox': [ '0.27.8' ],
+76 silly audit   '@types/body-parser': [ '1.19.6' ],
+76 silly audit   '@types/connect': [ '3.4.38' ],
+76 silly audit   '@types/cookiejar': [ '2.1.5' ],
+76 silly audit   '@types/cors': [ '2.8.19' ],
+76 silly audit   '@types/estree': [ '1.0.8' ],
+76 silly audit   '@types/express': [ '5.0.6' ],
+76 silly audit   '@types/express-serve-static-core': [ '5.1.0' ],
+76 silly audit   '@types/http-errors': [ '2.0.5' ],
+76 silly audit   '@types/methods': [ '1.1.4' ],
+76 silly audit   '@types/node': [ '20.19.25' ],
+76 silly audit   '@types/qs': [ '6.14.0' ],
+76 silly audit   '@types/range-parser': [ '1.2.7' ],
+76 silly audit   '@types/send': [ '1.2.1' ],
+76 silly audit   '@types/serve-static': [ '2.2.0' ],
+76 silly audit   '@types/superagent': [ '8.1.9' ],
+76 silly audit   '@types/supertest': [ '6.0.3' ],
+76 silly audit   '@vitest/expect': [ '1.6.1' ],
+76 silly audit   '@vitest/runner': [ '1.6.1' ],
+76 silly audit   '@vitest/snapshot': [ '1.6.1' ],
+76 silly audit   '@vitest/spy': [ '1.6.1' ],
+76 silly audit   '@vitest/utils': [ '1.6.1' ],
+76 silly audit   accepts: [ '2.0.0' ],
+76 silly audit   acorn: [ '8.15.0' ],
+76 silly audit   'acorn-walk': [ '8.3.4' ],
+76 silly audit   'ansi-styles': [ '5.2.0' ],
+76 silly audit   asap: [ '2.0.6' ],
+76 silly audit   'assertion-error': [ '1.1.0' ],
+76 silly audit   asynckit: [ '0.4.0' ],
+76 silly audit   'body-parser': [ '2.2.1' ],
+76 silly audit   bytes: [ '3.1.2' ],
+76 silly audit   cac: [ '6.7.14' ],
+76 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+76 silly audit   'call-bound': [ '1.0.4' ],
+76 silly audit   chai: [ '4.5.0' ],
+76 silly audit   'check-error': [ '1.0.3' ],
+76 silly audit   'combined-stream': [ '1.0.8' ],
+76 silly audit   'component-emitter': [ '1.3.1' ],
+76 silly audit   confbox: [ '0.1.8' ],
+76 silly audit   'content-disposition': [ '1.0.1' ],
+76 silly audit   'content-type': [ '1.0.5' ],
+76 silly audit   cookie: [ '0.7.2' ],
+76 silly audit   'cookie-signature': [ '1.2.2' ],
+76 silly audit   cookiejar: [ '2.1.4' ],
+76 silly audit   cors: [ '2.8.5' ],
+76 silly audit   'cross-spawn': [ '7.0.6' ],
+76 silly audit   debug: [ '4.4.3' ],
+76 silly audit   'deep-eql': [ '4.1.4' ],
+76 silly audit   'delayed-stream': [ '1.0.0' ],
+76 silly audit   depd: [ '2.0.0' ],
+76 silly audit   dezalgo: [ '1.0.4' ],
+76 silly audit   'diff-sequences': [ '29.6.3' ],
+76 silly audit   dotenv: [ '16.6.1' ],
+76 silly audit   'dunder-proto': [ '1.0.1' ],
+76 silly audit   'ee-first': [ '1.1.1' ],
+76 silly audit   encodeurl: [ '2.0.0' ],
+76 silly audit   'es-define-property': [ '1.0.1' ],
+76 silly audit   'es-errors': [ '1.3.0' ],
+76 silly audit   'es-object-atoms': [ '1.1.1' ],
+76 silly audit   'es-set-tostringtag': [ '2.1.0' ],
+76 silly audit   esbuild: [ '0.27.0', '0.21.5' ],
+76 silly audit   'escape-html': [ '1.0.3' ],
+76 silly audit   'estree-walker': [ '3.0.3' ],
+76 silly audit   etag: [ '1.8.1' ],
+76 silly audit   execa: [ '8.0.1' ],
+76 silly audit   express: [ '5.2.1' ],
+76 silly audit   'fast-safe-stringify': [ '2.1.1' ],
+76 silly audit   finalhandler: [ '2.1.1' ],
+76 silly audit   'form-data': [ '4.0.5' ],
+76 silly audit   'mime-db': [ '1.52.0', '1.54.0' ],
+76 silly audit   'mime-types': [ '2.1.35', '3.0.2' ],
+76 silly audit   formidable: [ '2.1.5' ],
+76 silly audit   forwarded: [ '0.2.0' ],
+76 silly audit   fresh: [ '2.0.0' ],
+76 silly audit   fsevents: [ '2.3.3' ],
+76 silly audit   'function-bind': [ '1.1.2' ],
+76 silly audit   'get-func-name': [ '2.0.2' ],
+76 silly audit   'get-intrinsic': [ '1.3.0' ],
+76 silly audit   'get-proto': [ '1.0.1' ],
+76 silly audit   'get-stream': [ '8.0.1' ],
+76 silly audit   'get-tsconfig': [ '4.13.0' ],
+76 silly audit   gopd: [ '1.2.0' ],
+76 silly audit   'has-symbols': [ '1.1.0' ],
+76 silly audit   'has-tostringtag': [ '1.0.2' ],
+76 silly audit   hasown: [ '2.0.2' ],
+76 silly audit   'http-errors': [ '2.0.1' ],
+76 silly audit   'human-signals': [ '5.0.0' ],
+76 silly audit   'iconv-lite': [ '0.7.0' ],
+76 silly audit   inherits: [ '2.0.4' ],
+76 silly audit   'ipaddr.js': [ '1.9.1' ],
+76 silly audit   'is-promise': [ '4.0.0' ],
+76 silly audit   'is-stream': [ '3.0.0' ],
+76 silly audit   isexe: [ '2.0.0' ],
+76 silly audit   'js-tokens': [ '9.0.1' ],
+76 silly audit   'local-pkg': [ '0.5.1' ],
+76 silly audit   loupe: [ '2.3.7' ],
+76 silly audit   'magic-string': [ '0.30.21' ],
+76 silly audit   'math-intrinsics': [ '1.1.0' ],
+76 silly audit   'media-typer': [ '1.1.0' ],
+76 silly audit   'merge-descriptors': [ '2.0.0' ],
+76 silly audit   'merge-stream': [ '2.0.0' ],
+76 silly audit   methods: [ '1.1.2' ],
+76 silly audit   mime: [ '2.6.0' ],
+76 silly audit   'mimic-fn': [ '4.0.0' ],
+76 silly audit   mlly: [ '1.8.0' ],
+76 silly audit   pathe: [ '2.0.3', '1.1.2' ],
+76 silly audit   ms: [ '2.1.3' ],
+76 silly audit   nanoid: [ '3.3.11' ],
+76 silly audit   negotiator: [ '1.0.0' ],
+76 silly audit   'npm-run-path': [ '5.3.0' ],
+76 silly audit   'path-key': [ '4.0.0', '3.1.1' ],
+76 silly audit   'object-assign': [ '4.1.1' ],
+76 silly audit   'object-inspect': [ '1.13.4' ],
+76 silly audit   'on-finished': [ '2.4.1' ],
+76 silly audit   once: [ '1.4.0' ],
+76 silly audit   onetime: [ '6.0.0' ],
+76 silly audit   'p-limit': [ '5.0.0' ],
+76 silly audit   parseurl: [ '1.3.3' ],
+76 silly audit   'path-to-regexp': [ '8.3.0' ],
+76 silly audit   pathval: [ '1.1.1' ],
+76 silly audit   picocolors: [ '1.1.1' ],
+76 silly audit   'pkg-types': [ '1.3.1' ],
+76 silly audit   postcss: [ '8.5.6' ],
+76 silly audit   'pretty-format': [ '29.7.0' ],
+76 silly audit   'proxy-addr': [ '2.0.7' ],
+76 silly audit   qs: [ '6.14.0' ],
+76 silly audit   'range-parser': [ '1.2.1' ],
+76 silly audit   'raw-body': [ '3.0.2' ],
+76 silly audit   'react-is': [ '18.3.1' ],
+76 silly audit   'resolve-pkg-maps': [ '1.0.0' ],
+76 silly audit   rollup: [ '4.53.3' ],
+76 silly audit   router: [ '2.2.0' ],
+76 silly audit   'safer-buffer': [ '2.1.2' ],
+76 silly audit   semver: [ '7.7.3' ],
+76 silly audit   send: [ '1.2.0' ],
+76 silly audit   'serve-static': [ '2.2.0' ],
+76 silly audit   setprototypeof: [ '1.2.0' ],
+76 silly audit   'shebang-command': [ '2.0.0' ],
+76 silly audit   'shebang-regex': [ '3.0.0' ],
+76 silly audit   'side-channel': [ '1.1.0' ],
+76 silly audit   'side-channel-list': [ '1.0.0' ],
+76 silly audit   'side-channel-map': [ '1.0.1' ],
+76 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+76 silly audit   siginfo: [ '2.0.0' ],
+76 silly audit   'signal-exit': [ '4.1.0' ],
+76 silly audit   'source-map-js': [ '1.2.1' ],
+76 silly audit   stackback: [ '0.0.2' ],
+76 silly audit   statuses: [ '2.0.2' ],
+76 silly audit   'std-env': [ '3.10.0' ],
+76 silly audit   'strip-final-newline': [ '3.0.0' ],
+76 silly audit   'strip-literal': [ '2.1.1' ],
+76 silly audit   superagent: [ '8.1.2' ],
+76 silly audit   supertest: [ '6.3.4' ],
+76 silly audit   tinybench: [ '2.9.0' ],
+76 silly audit   tinypool: [ '0.8.4' ],
+76 silly audit   tinyspy: [ '2.2.1' ],
+76 silly audit   toidentifier: [ '1.0.1' ],
+76 silly audit   tsx: [ '4.21.0' ],
+76 silly audit   'type-detect': [ '4.1.0' ],
+76 silly audit   'type-is': [ '2.0.1' ],
+76 silly audit   typescript: [ '5.9.3' ],
+76 silly audit   ufo: [ '1.6.1' ],
+76 silly audit   'undici-types': [ '6.21.0' ],
+76 silly audit   unpipe: [ '1.0.0' ],
+76 silly audit   vary: [ '1.1.2' ],
+76 silly audit   vite: [ '5.4.21' ],
+76 silly audit   'vite-node': [ '1.6.1' ],
+76 silly audit   vitest: [ '1.6.1' ],
+76 silly audit   which: [ '2.0.2' ],
+76 silly audit   'why-is-node-running': [ '2.3.0' ],
+76 silly audit   wrappy: [ '1.0.2' ],
+76 silly audit   'yocto-queue': [ '1.2.2' ]
+76 silly audit }
+77 http cache dotenv@https://registry.npmjs.org/dotenv/-/dotenv-16.6.1.tgz 1ms (cache hit)
+78 http cache @rollup/rollup-linux-x64-musl@https://registry.npmjs.org/@rollup/rollup-linux-x64-musl/-/rollup-linux-x64-musl-4.53.3.tgz 0ms (cache hit)
+79 silly tarball no local data for dotenv@https://registry.npmjs.org/dotenv/-/dotenv-16.6.1.tgz. Extracting by manifest.
+80 silly tarball no local data for @rollup/rollup-linux-x64-musl@https://registry.npmjs.org/@rollup/rollup-linux-x64-musl/-/rollup-linux-x64-musl-4.53.3.tgz. Extracting by manifest.
+81 http fetch GET 200 https://registry.npmjs.org/dotenv/-/dotenv-16.6.1.tgz 271ms (cache miss)
+82 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 390ms
+83 silly audit report {
+83 silly audit report   esbuild: [
+83 silly audit report     {
+83 silly audit report       id: 1102341,
+83 silly audit report       url: 'https://github.com/advisories/GHSA-67mh-4wv8-2f99',
+83 silly audit report       title: 'esbuild enables any website to send any requests to the development server and read the response',
+83 silly audit report       severity: 'moderate',
+83 silly audit report       vulnerable_versions: '<=0.24.2',
+83 silly audit report       cwe: [Array],
+83 silly audit report       cvss: [Object]
+83 silly audit report     }
+83 silly audit report   ]
+83 silly audit report }
+84 silly packumentCache corgi:https://registry.npmjs.org/esbuild cache-miss
+85 http cache https://registry.npmjs.org/esbuild 8ms (cache hit)
+86 silly packumentCache corgi:https://registry.npmjs.org/esbuild set size:874529 disposed:false
+87 silly packumentCache corgi:https://registry.npmjs.org/vite cache-miss
+88 http cache https://registry.npmjs.org/vite 5ms (cache hit)
+89 silly packumentCache corgi:https://registry.npmjs.org/vite set size:2133328 disposed:false
+90 silly packumentCache corgi:https://registry.npmjs.org/vite-node cache-miss
+91 silly packumentCache corgi:https://registry.npmjs.org/vitest cache-miss
+92 http cache https://registry.npmjs.org/vite-node 7ms (cache hit)
+93 silly packumentCache corgi:https://registry.npmjs.org/vite-node set size:451021 disposed:false
+94 http cache https://registry.npmjs.org/vitest 10ms (cache hit)
+95 silly packumentCache corgi:https://registry.npmjs.org/vitest set size:1180529 disposed:false
+96 http fetch GET 200 https://registry.npmjs.org/@rollup/rollup-linux-x64-musl/-/rollup-linux-x64-musl-4.53.3.tgz 462ms (cache miss)
+97 silly ADD node_modules/dotenv
+98 silly ADD node_modules/@rollup/rollup-linux-x64-musl
+99 silly REMOVE node_modules/@whatwg-node/promise-helpers
+100 silly REMOVE node_modules/@protobufjs/utf8
+101 silly REMOVE node_modules/@protobufjs/path
+102 silly REMOVE node_modules/@protobufjs/pool
+103 silly REMOVE node_modules/@types/long
+104 silly REMOVE node_modules/@protobufjs/float
+105 silly REMOVE node_modules/@protobufjs/inquire
+106 silly REMOVE node_modules/@protobufjs/eventemitter
+107 silly REMOVE node_modules/@protobufjs/aspromise
+108 silly REMOVE node_modules/@protobufjs/codegen
+109 silly REMOVE node_modules/@protobufjs/fetch
+110 silly REMOVE node_modules/@graphql-tools/schema
+111 silly REMOVE node_modules/@protobufjs/base64
+112 silly REMOVE node_modules/@graphql-typed-document-node/core
+113 silly REMOVE node_modules/@graphql-tools/utils
+114 silly REMOVE node_modules/@as-integrations/express5
+115 silly REMOVE node_modules/@graphql-tools/merge
+116 silly REMOVE node_modules/@apollo/utils.stripsensitiveliterals
+117 silly REMOVE node_modules/@apollo/utils.withrequired
+118 silly REMOVE node_modules/@apollo/utils.usagereporting
+119 silly REMOVE node_modules/@apollo/utils.removealiases
+120 silly REMOVE node_modules/@apollo/utils.sortast
+121 silly REMOVE node_modules/@apollo/utils.printwithreducedwhitespace
+122 silly REMOVE node_modules/@apollo/utils.logger
+123 silly REMOVE node_modules/@apollo/utils.keyvaluecache
+124 silly REMOVE node_modules/@apollo/utils.dropunuseddefinitions
+125 silly REMOVE node_modules/@apollo/utils.createhash
+126 silly REMOVE node_modules/@apollo/utils.fetcher
+127 silly REMOVE node_modules/@apollo/utils.isnodelike
+128 silly REMOVE node_modules/@apollo/server
+129 silly REMOVE node_modules/@apollo/usage-reporting-protobuf
+130 silly REMOVE node_modules/@apollo/cache-control-types
+131 silly REMOVE node_modules/@apollo/server-gateway-interface
+132 silly REMOVE node_modules/@apollo/protobufjs
+133 silly REMOVE node_modules/whatwg-mimetype
+134 silly REMOVE node_modules/which-typed-array
+135 silly REMOVE node_modules/uuid
+136 silly REMOVE node_modules/typed-array-buffer
+137 silly REMOVE node_modules/tslib
+138 silly REMOVE node_modules/to-buffer
+139 silly REMOVE node_modules/sha.js
+140 silly REMOVE node_modules/set-function-length
+141 silly REMOVE node_modules/safe-buffer
+142 silly REMOVE node_modules/retry
+143 silly REMOVE node_modules/possible-typed-array-names
+144 silly REMOVE node_modules/lru-cache
+145 silly REMOVE node_modules/lodash.sortby
+146 silly REMOVE node_modules/loglevel
+147 silly REMOVE node_modules/long
+148 silly REMOVE node_modules/isarray
+149 silly REMOVE node_modules/is-typed-array
+150 silly REMOVE node_modules/is-callable
+151 silly REMOVE node_modules/has-property-descriptors
+152 silly REMOVE node_modules/graphql
+153 silly REMOVE node_modules/cross-inspect
+154 silly REMOVE node_modules/for-each
+155 silly REMOVE node_modules/define-data-property
+156 silly REMOVE node_modules/async-retry
+157 silly REMOVE node_modules/call-bind
+158 silly REMOVE node_modules/available-typed-arrays
+159 verbose cwd /home/ukv/projects/TutorialHub_Backend
+160 verbose os Linux 6.17.8-arch1-1
+161 verbose node v25.2.1
+162 verbose npm  v11.6.3
+163 verbose exit 0
+164 info ok
