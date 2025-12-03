@@ -93,6 +93,8 @@ api.get('/github/repos/:repo/contents', async (req, res) => {
 // Mount API router under /api to avoid double-prefix when deployed.
 app.use('/api', api);
 
+// Default export for Vercel serverless.
+export default app;
 
 async function fetchWithAuth(url: string, token: string) {
   return fetch(url, {
@@ -112,8 +114,9 @@ function safeJson(payload: string) {
   }
 }
 
-
+if (require.main === module) {
   const port = Number(process.env.PORT) || 4000;
-  export default app.listen(port, () => {
+  app.listen(port, () => {
     console.log(`🚀 Express server ready at http://localhost:${port}/`);
   });
+}
