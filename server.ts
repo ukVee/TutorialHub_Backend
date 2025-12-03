@@ -13,11 +13,13 @@ export function buildApp() {
   app.use(cors());
   app.use(express.json());
 
-  app.get('/health', (_req, res) => {
+  const api = express.Router();
+
+  api.get('/health', (_req, res) => {
     res.json({ status: 'healthy' });
   });
 
-  app.get('/api/github/user', async (_req, res) => {
+  api.get('/github/user', async (_req, res) => {
     const token = process.env.GITHUB_TOKEN;
     if (!token) return res.status(500).json({ error: 'GITHUB_TOKEN not configured' });
 
@@ -48,7 +50,7 @@ export function buildApp() {
     return res.json(shaped);
   });
 
-  app.get('/api/github/gists', async (_req, res) => {
+  api.get('/github/gists', async (_req, res) => {
     const token = process.env.GITHUB_TOKEN;
     if (!token) return res.status(500).json({ error: 'GITHUB_TOKEN not configured' });
 
@@ -64,7 +66,7 @@ export function buildApp() {
   });
 
   // Repo contents for OWNER; optional path via query ?path=... inside repo
-  app.get('/api/github/repos/:repo/contents', async (req, res) => {
+  api.get('/github/repos/:repo/contents', async (req, res) => {
     const token = process.env.GITHUB_TOKEN;
     if (!token) return res.status(500).json({ error: 'GITHUB_TOKEN not configured' });
 
@@ -90,6 +92,9 @@ export function buildApp() {
 
     return res.json(safeJson(bodyText));
   });
+
+  // Mount API router under /api to avoid double-prefix when deployed.
+  app.use('/api', api);
 
   return { app, httpServer };
 }

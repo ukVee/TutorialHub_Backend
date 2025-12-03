@@ -1,6 +1,6 @@
 import { buildApp } from '../server';
 
-// Vercel Node/Express handler: export the app, let the platform create the listener.
+// Catch-all Vercel function for /api/* paths. Vercel provides the listener.
 const { app } = buildApp();
 
 export default app;
