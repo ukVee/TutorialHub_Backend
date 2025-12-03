@@ -50,7 +50,7 @@ describe('Express server', () => {
       return new Response(JSON.stringify(mockUser), { status: 200, headers: { 'content-type': 'application/json' } });
     });
 
-    // @ts-expect-error allow mock
+
     global.fetch = fetchMock;
 
     const res = await request(app).get('/api/github/user').expect(200);
@@ -82,7 +82,7 @@ describe('Express server', () => {
       return new Response(JSON.stringify(mockGists), { status: 200, headers: { 'content-type': 'application/json' } });
     });
 
-    // @ts-expect-error allow mock
+
     global.fetch = fetchMock;
 
     const res = await request(app).get('/api/github/gists').expect(200);
@@ -99,7 +99,7 @@ describe('Express server', () => {
       return new Response(JSON.stringify(mockContent), { status: 200, headers: { 'content-type': 'application/json' } });
     });
 
-    // @ts-expect-error allow mock
+
     global.fetch = fetchMock;
 
     const res = await request(app).get('/api/github/repos/demo/contents?path=src/utils').expect(200);
