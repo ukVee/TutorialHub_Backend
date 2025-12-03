@@ -10,6 +10,6 @@
     "strict": true,
     "skipLibCheck": true
   },
-  "include": ["server.ts", "schemas/**/*.ts", "tests/**/*.ts"],
+  "include": ["server.ts", "tests/**/*.ts"],
   "exclude": ["node_modules", "dist"]
 }
