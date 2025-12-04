@@ -10,6 +10,6 @@
     "strict": true,
     "skipLibCheck": true
   },
-  "include": ["server.ts", "api/**/*.ts", "apiRoutes/**/*.ts"],
+  "include": ["server.ts", "api/**/*.ts", "apiRoutes/**/*.ts", "lib/**/*.ts", "middleware/**/*.ts"],
   "exclude": ["node_modules", "dist"]
 }

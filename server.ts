@@ -3,11 +3,13 @@ import cors from 'cors';
 import express from 'express';
 
 import apiRouter from './apiRoutes';
+import { originGuard } from './middleware';
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use(originGuard);
 
 // Mount API router under /api to avoid double-prefix when deployed.
 app.use('/api', apiRouter);
