@@ -7,6 +7,11 @@ import { originGuard } from './middleware';
 
 const app = express();
 
+app.use((req, _res, next) => {
+  console.log(`[req] ${req.method} ${req.originalUrl} origin=${req.get('origin') || ''}`);
+  next();
+});
+
 app.use(cors());
 app.use(express.json());
 app.use(originGuard);

@@ -1,7 +1,9 @@
 import { Router, type Request, type Response } from 'express';
+import { Readable } from 'node:stream';
+import type { ReadableStream as NodeReadableStream } from 'node:stream/web';
 
 import { GitHubContentFile } from '../lib/types';
-import { assertToken, fetchWithAuth, GITHUB_API_BASE_URL, OWNER } from '../lib/auth';
+import { assertToken, fetchWithAuth, GITHUB_API_BASE_URL, OWNER, GITHUB_TOKEN, USER_AGENT } from '../lib/auth';
 
 const githubRouter = Router();
 
@@ -77,16 +79,92 @@ githubRouter.get('/repos/:repo/contents', async (req, res) => {
   const pathSuffix = encodedPath ? `/${encodedPath}` : '';
 
   const url = `${GITHUB_API_BASE_URL}/repos/${OWNER}/${repo}/contents${pathSuffix}`;
+  console.log(`[github:list] repo=${repo} path=${rawPath || '/'} url=${url}`);
   const ghRes = await fetchWithAuth(url);
   const bodyText = await ghRes.text();
 
   if (!ghRes.ok) {
+    console.log(`[github:list:error] status=${ghRes.status} body=${bodyText.slice(0, 200)}`);
     return res
       .status(ghRes.status)
       .json({ error: 'GitHub API request failed', status: ghRes.status, body: safeJson(bodyText) });
   }
 
   return res.json(safeJson(bodyText));
+});
+
+function validateRepoParam(rawRepo: string) {
+  if (!rawRepo) return undefined;
+  const repo = rawRepo.trim();
+  if (!repo) return undefined;
+  if (!/^[A-Za-z0-9_.-]+$/.test(repo)) return undefined;
+  return repo;
+}
+
+function sanitizePath(rawPath: unknown): string | undefined {
+  const val = typeof rawPath === 'string' ? rawPath.trim() : '';
+  if (!val) return undefined;
+  const parts = val.split('/').filter(Boolean);
+  if (parts.length === 0) return undefined;
+  if (parts.some((segment) => segment === '..')) return undefined;
+  return parts.join('/');
+}
+
+// Stream file contents with range support; falls back to full-fetch chunking when Range unsupported.
+githubRouter.get('/repos/:repo/file/stream', async (req: Request, res: Response) => {
+  if (!assertToken(res)) return;
+
+  const repo = validateRepoParam(req.params.repo || '');
+  if (!repo) return res.status(400).json({ error: 'invalid repo' });
+
+  const sanitizedPath = sanitizePath(req.query.filepath ?? req.query.path);
+  if (!sanitizedPath) return res.status(400).json({ error: 'filepath is required' });
+
+  const startRaw = typeof req.query.start === 'string' ? req.query.start : undefined;
+  const start = startRaw ? Number.parseInt(startRaw, 10) : 0;
+  if (Number.isNaN(start) || start < 0) return res.status(400).json({ error: 'start must be >= 0' });
+
+  const apiUrl = `${GITHUB_API_BASE_URL}/repos/${OWNER}/${repo}/contents/${encodeURI(sanitizedPath)}`;
+  console.log(`[github:file-stream] repo=${repo} path=${sanitizedPath} start=${start}`);
+
+  const upstreamHeaders: Record<string, string> = {
+    Authorization: `Bearer ${GITHUB_TOKEN}`,
+    Accept: 'application/vnd.github.v3.raw',
+    'User-Agent': USER_AGENT,
+  };
+  if (start > 0) {
+    upstreamHeaders.Range = `bytes=${start}-`;
+  }
+
+  const upstream = await fetch(apiUrl, { headers: upstreamHeaders });
+
+  if (!upstream.ok && upstream.status !== 206) {
+    const body = await upstream.text();
+    console.log(`[github:file-stream:error] status=${upstream.status} body=${body.slice(0, 200)}`);
+    return res
+      .status(upstream.status)
+      .json({ error: 'GitHub API request failed', status: upstream.status, body: safeJson(body) });
+  }
+
+  const contentType = upstream.headers.get('content-type') || 'text/plain; charset=utf-8';
+  const contentRange = upstream.headers.get('content-range');
+  const etag = upstream.headers.get('etag');
+  const length = upstream.headers.get('content-length');
+  console.log(`[github:file-stream:upstream] status=${upstream.status} type=${contentType} range=${contentRange || ''} len=${length || ''}`);
+
+  if (contentRange) res.setHeader('Content-Range', contentRange);
+  if (etag) res.setHeader('ETag', etag);
+  if (length) res.setHeader('Content-Length', length);
+  res.setHeader('Accept-Ranges', 'bytes');
+  res.setHeader('Content-Type', contentType);
+
+  const body = upstream.body;
+  if (!body) {
+    return res.status(502).json({ error: 'empty response body from GitHub' });
+  }
+
+  // Pipe without buffering; Node 18+ exposes Readable.fromWeb
+  return Readable.fromWeb(body as unknown as NodeReadableStream).pipe(res);
 });
 
 function isFileContentResponse(data: unknown): data is GitHubContentFile {
